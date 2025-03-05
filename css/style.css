@@ -533,6 +533,12 @@ details[open] summary ~ * {
     margin: 0;
 }
 
+.edad {
+    display: flex;
+    width: 97%;
+    gap: 10px;
+}
+
 input.boton {
     background-color: #ED0177;
     margin: 20px auto;
