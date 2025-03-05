@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/assets/style/style.css">
+    <link rel="stylesheet" href="/assets/style/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="contenido-header">
+            <div class="logo-menu">
+                <div class="logo">
+                    <a href="/index.html"><img src="/assets/img/Sargames_studio-removebg-preview.webp" alt="Logo de la tienda" width="150" height="42"></a>
+                    
+                </div>
+                <button class="hamburguesa">☰</button>
+            </div>
+            <nav class="menu">
+                <a href="/index.html" class="menu-item"> <i class="fa-solid fa-house"></i> Inicio</a>
+                <a href="/nosotros.html" class="menu-item"> <i class="fa-solid fa-users"></i> Nosotros</a>
+                <a href="/contacto.html" class="menu-item"> <i class="fa-solid fa-phone"></i> Contacto</a>
+                <a href="/alta.html" class="menu-item"> <i class="fa-solid fa-upload"></i> Alta</a>
+            </nav>
+            <div class="busqueda-carrito">
+                    <input type="text" placeholder="Buscar productos" class="buscador">
+                <div class="carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>     
+    </header>
+    <main class="contacto">
+        <h2>Contacto</h2>
+        <form class="formulario">
+            <fieldset>
+                <legend>Información Personal</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Tu Nombre" id="nombre" required>
+                <label for="email">E-mail</label>
+                <input type="email" placeholder="Tu Email" id="email">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" placeholder="Tu Teléfono" id="telefono" required>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje"></textarea>
+            </fieldset>
+            <button type="submit" class="boton">Enviar</button>
+    </main>
+    <footer class="footer">
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <p>Correo: tienda@tienda.com</p>
+            <p>Teléfono: 1234567890</p>
+        </div>
+        <div class="redes">
+            <h3>Redes sociales</h3>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/12ccf94b47.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/menu.js"></script>
+    <script src="assets/js/formulario.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta</title>
+    <link rel="stylesheet" href="/assets/style/style.css">
+    <link rel="stylesheet" href="/assets/style/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="contenido-header">
+            <div class="logo-menu">
+                <div class="logo">
+                    <a href="/index.html"><img src="/assets/img/Sargames_studio-removebg-preview.webp" alt="Logo de la tienda" width="150" height="42"></a>
+                </div>
+                <button class="hamburguesa">☰</button>
+            </div>
+            <nav class="menu">
+                <a href="/index.html" class="menu-item"> <i class="fa-solid fa-house"></i> Inicio</a>
+                <a href="/nosotros.html" class="menu-item"> <i class="fa-solid fa-users"></i> Nosotros</a>
+                <a href="/contacto.html" class="menu-item"> <i class="fa-solid fa-phone"></i> Contacto</a>
+                <a href="/alta.html" class="menu-item"> <i class="fa-solid fa-upload"></i> Alta</a>
+            </nav>
+            <div class="busqueda-carrito">
+                    <input type="text" placeholder="Buscar productos" class="buscador">
+                <div class="carrito">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+            </div>
+        </div>     
+    </header>
+
+    <main class="subir-productos">
+        <h2>Sube tu producto</h2>
+    <form class="formulario">
+        <fieldset>
+            <legend>Información del producto</legend>
+
+            <label for="nombre">Nombre del producto</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre del producto" required>
+
+            <label for="precio">Precio</label>
+            <input type="number" name="precio" id="precio" placeholder="Precio del producto" step="0.01" min="5" max="80" required>
+
+            <label for="imagen">Imagen</label>
+            <input type="file" name="imagen" id="imagen" accept="image/*">
+
+            <label for="descripcion-corta">Descripción corta</label>
+            <textarea name="descripcion" id="descripcion-corta" placeholder="Descripción corta del producto"></textarea required>
+
+            <label for="descripcion-larga">Descripción larga</label>
+            <textarea name="descripcion-larga" id="descripcion-larga" placeholder="Descripción larga del producto"></textarea>
+
+            <label for="stock">Stock</label>
+            <input type="number" name="stock" id="stock" placeholder="Stock del producto">
+
+            <label for="categoria">Categoría</label>
+            <select name="categoria" id="categoria">
+                <option value="">-- Seleccione --</option>
+                <option value="1">Acción</option>
+                <option value="2">Peleas</option>
+                <option value="3">FPS</option>
+                <option value="4">RPG</option>
+            </select>
+
+            <label for="marca">Marca</label>
+            <input type="text" name="marca" id="marca" placeholder="Marca del producto">
+
+            <p>Envio sin cargo</p>
+            <div class="forma-envio">
+                <label for="si">Sí</label>
+                <input name="envio" type="radio" value="si" id="si">
+
+                <label for="no">No</label>
+                <input name="envio" type="radio" value="no" id="no">
+            </div>
+        </fieldset>
+        <button type="submit" class="boton">Enviar</button>
+    </form>
+    </main>
+    <footer class="footer">
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <p>Correo: tienda@tienda.com</p>
+            <p>Teléfono: 1234567890</p>
+        </div>
+        <div class="redes">
+            <h3>Redes sociales</h3>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/12ccf94b47.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/menu.js"></script>
+</body>
+</html>
