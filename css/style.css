@@ -1,4 +1,8 @@
-body {
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
     background-color: #272727;
     color: white;
     font-family: 'Roboto', sans-serif;
@@ -6,8 +10,7 @@ body {
     margin: 0 auto;
     overflow-x: hidden;
     margin: 10px;
-}
-
+  }
 
 @media (min-width: 768px) {
     .contenido-header {
